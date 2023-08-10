@@ -28,34 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            lblID = new Label();
             lblnome = new Label();
             lblcpf = new Label();
             lbldatadenascimento = new Label();
             lblRendamensal = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
+            txtnome = new TextBox();
+            txtcpf = new TextBox();
+            txtdatadenascimento = new TextBox();
             button1 = new Button();
-            textBox5 = new TextBox();
+            txtrendamensal = new TextBox();
+            lblID = new Label();
+            lblidmostrar = new Label();
+            dateTimePicker1 = new DateTimePicker();
             SuspendLayout();
-            // 
-            // lblID
-            // 
-            lblID.AutoSize = true;
-            lblID.Font = new Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
-            lblID.Location = new Point(98, 9);
-            lblID.Name = "lblID";
-            lblID.Size = new Size(180, 37);
-            lblID.TabIndex = 0;
-            lblID.Text = "ID de usuario:";
             // 
             // lblnome
             // 
             lblnome.AutoSize = true;
             lblnome.Font = new Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
-            lblnome.Location = new Point(98, 95);
+            lblnome.Location = new Point(12, 68);
             lblnome.Name = "lblnome";
             lblnome.Size = new Size(210, 37);
             lblnome.TabIndex = 1;
@@ -65,7 +56,7 @@
             // 
             lblcpf.AutoSize = true;
             lblcpf.Font = new Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
-            lblcpf.Location = new Point(98, 181);
+            lblcpf.Location = new Point(268, 68);
             lblcpf.Name = "lblcpf";
             lblcpf.Size = new Size(62, 37);
             lblcpf.TabIndex = 2;
@@ -75,7 +66,7 @@
             // 
             lbldatadenascimento.AutoSize = true;
             lbldatadenascimento.Font = new Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
-            lbldatadenascimento.Location = new Point(98, 267);
+            lbldatadenascimento.Location = new Point(12, 154);
             lbldatadenascimento.Name = "lbldatadenascimento";
             lbldatadenascimento.Size = new Size(258, 37);
             lbldatadenascimento.TabIndex = 3;
@@ -85,73 +76,93 @@
             // 
             lblRendamensal.AutoSize = true;
             lblRendamensal.Font = new Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
-            lblRendamensal.Location = new Point(98, 353);
+            lblRendamensal.Location = new Point(268, 154);
             lblRendamensal.Name = "lblRendamensal";
             lblRendamensal.Size = new Size(243, 37);
             lblRendamensal.TabIndex = 4;
             lblRendamensal.Text = "Renda Mensal (R$):";
             // 
-            // textBox1
+            // txtnome
             // 
-            textBox1.Font = new Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox1.Location = new Point(98, 49);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(250, 43);
-            textBox1.TabIndex = 5;
+            txtnome.Font = new Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
+            txtnome.Location = new Point(12, 108);
+            txtnome.Name = "txtnome";
+            txtnome.Size = new Size(250, 43);
+            txtnome.TabIndex = 6;
             // 
-            // textBox2
+            // txtcpf
             // 
-            textBox2.Font = new Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox2.Location = new Point(98, 135);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(250, 43);
-            textBox2.TabIndex = 6;
+            txtcpf.Font = new Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
+            txtcpf.Location = new Point(268, 108);
+            txtcpf.Name = "txtcpf";
+            txtcpf.Size = new Size(250, 43);
+            txtcpf.TabIndex = 7;
             // 
-            // textBox3
+            // txtdatadenascimento
             // 
-            textBox3.Font = new Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox3.Location = new Point(98, 221);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(250, 43);
-            textBox3.TabIndex = 7;
-            // 
-            // textBox4
-            // 
-            textBox4.Font = new Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox4.Location = new Point(98, 307);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(250, 43);
-            textBox4.TabIndex = 8;
+            txtdatadenascimento.Font = new Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
+            txtdatadenascimento.Location = new Point(12, 194);
+            txtdatadenascimento.Name = "txtdatadenascimento";
+            txtdatadenascimento.Size = new Size(250, 43);
+            txtdatadenascimento.TabIndex = 8;
             // 
             // button1
             // 
             button1.Font = new Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
-            button1.Location = new Point(98, 489);
+            button1.Location = new Point(12, 285);
             button1.Name = "button1";
-            button1.Size = new Size(250, 41);
+            button1.Size = new Size(250, 68);
             button1.TabIndex = 9;
             button1.Text = "cadastrar";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
-            // textBox5
+            // txtrendamensal
             // 
-            textBox5.Font = new Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox5.Location = new Point(98, 393);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(250, 43);
-            textBox5.TabIndex = 10;
+            txtrendamensal.Font = new Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
+            txtrendamensal.Location = new Point(268, 194);
+            txtrendamensal.Name = "txtrendamensal";
+            txtrendamensal.Size = new Size(250, 43);
+            txtrendamensal.TabIndex = 10;
+            // 
+            // lblID
+            // 
+            lblID.AutoSize = true;
+            lblID.Font = new Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
+            lblID.Location = new Point(12, 18);
+            lblID.Name = "lblID";
+            lblID.Size = new Size(180, 37);
+            lblID.TabIndex = 0;
+            lblID.Text = "ID de usuario:";
+            // 
+            // lblidmostrar
+            // 
+            lblidmostrar.AutoSize = true;
+            lblidmostrar.Font = new Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
+            lblidmostrar.Location = new Point(187, 18);
+            lblidmostrar.Name = "lblidmostrar";
+            lblidmostrar.Size = new Size(0, 37);
+            lblidmostrar.TabIndex = 11;
+            // 
+            // dateTimePicker1
+            // 
+            dateTimePicker1.Location = new Point(282, 330);
+            dateTimePicker1.Name = "dateTimePicker1";
+            dateTimePicker1.Size = new Size(248, 23);
+            dateTimePicker1.TabIndex = 12;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(461, 569);
-            Controls.Add(textBox5);
+            ClientSize = new Size(654, 425);
+            Controls.Add(dateTimePicker1);
+            Controls.Add(lblidmostrar);
+            Controls.Add(txtrendamensal);
             Controls.Add(button1);
-            Controls.Add(textBox4);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(txtdatadenascimento);
+            Controls.Add(txtcpf);
+            Controls.Add(txtnome);
             Controls.Add(lblRendamensal);
             Controls.Add(lbldatadenascimento);
             Controls.Add(lblcpf);
@@ -159,22 +170,23 @@
             Controls.Add(lblID);
             Name = "Form1";
             Text = "Form1";
+            Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private Label lblID;
         private Label lblnome;
         private Label lblcpf;
         private Label lbldatadenascimento;
         private Label lblRendamensal;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
-        private TextBox textBox4;
+        private TextBox txtnome;
+        private TextBox txtcpf;
+        private TextBox txtdatadenascimento;
         private Button button1;
-        private TextBox textBox5;
+        private TextBox txtrendamensal;
+        private Label lblID;
+        private Label lblidmostrar;
+        private DateTimePicker dateTimePicker1;
     }
 }
