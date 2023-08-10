@@ -1,0 +1,17 @@
+C:\Users\vitor.goliveira9\source\repos\ATV-UC12-001A\Atividade12SLC\Atividade12PRJ\bin\Debug\net6.0-windows\Atividade12PRJ.exe
+C:\Users\vitor.goliveira9\source\repos\ATV-UC12-001A\Atividade12SLC\Atividade12PRJ\bin\Debug\net6.0-windows\Atividade12PRJ.deps.json
+C:\Users\vitor.goliveira9\source\repos\ATV-UC12-001A\Atividade12SLC\Atividade12PRJ\bin\Debug\net6.0-windows\Atividade12PRJ.runtimeconfig.json
+C:\Users\vitor.goliveira9\source\repos\ATV-UC12-001A\Atividade12SLC\Atividade12PRJ\bin\Debug\net6.0-windows\Atividade12PRJ.dll
+C:\Users\vitor.goliveira9\source\repos\ATV-UC12-001A\Atividade12SLC\Atividade12PRJ\bin\Debug\net6.0-windows\Atividade12PRJ.pdb
+C:\Users\vitor.goliveira9\source\repos\ATV-UC12-001A\Atividade12SLC\Atividade12PRJ\obj\Debug\net6.0-windows\Atividade12PRJ.csproj.AssemblyReference.cache
+C:\Users\vitor.goliveira9\source\repos\ATV-UC12-001A\Atividade12SLC\Atividade12PRJ\obj\Debug\net6.0-windows\Atividade12PRJ.Form1.resources
+C:\Users\vitor.goliveira9\source\repos\ATV-UC12-001A\Atividade12SLC\Atividade12PRJ\obj\Debug\net6.0-windows\Atividade12PRJ.csproj.GenerateResource.cache
+C:\Users\vitor.goliveira9\source\repos\ATV-UC12-001A\Atividade12SLC\Atividade12PRJ\obj\Debug\net6.0-windows\Atividade12PRJ.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vitor.goliveira9\source\repos\ATV-UC12-001A\Atividade12SLC\Atividade12PRJ\obj\Debug\net6.0-windows\Atividade12PRJ.AssemblyInfoInputs.cache
+C:\Users\vitor.goliveira9\source\repos\ATV-UC12-001A\Atividade12SLC\Atividade12PRJ\obj\Debug\net6.0-windows\Atividade12PRJ.AssemblyInfo.cs
+C:\Users\vitor.goliveira9\source\repos\ATV-UC12-001A\Atividade12SLC\Atividade12PRJ\obj\Debug\net6.0-windows\Atividade12PRJ.csproj.CoreCompileInputs.cache
+C:\Users\vitor.goliveira9\source\repos\ATV-UC12-001A\Atividade12SLC\Atividade12PRJ\obj\Debug\net6.0-windows\Atividade12PRJ.dll
+C:\Users\vitor.goliveira9\source\repos\ATV-UC12-001A\Atividade12SLC\Atividade12PRJ\obj\Debug\net6.0-windows\refint\Atividade12PRJ.dll
+C:\Users\vitor.goliveira9\source\repos\ATV-UC12-001A\Atividade12SLC\Atividade12PRJ\obj\Debug\net6.0-windows\Atividade12PRJ.pdb
+C:\Users\vitor.goliveira9\source\repos\ATV-UC12-001A\Atividade12SLC\Atividade12PRJ\obj\Debug\net6.0-windows\Atividade12PRJ.genruntimeconfig.cache
+C:\Users\vitor.goliveira9\source\repos\ATV-UC12-001A\Atividade12SLC\Atividade12PRJ\obj\Debug\net6.0-windows\ref\Atividade12PRJ.dll
