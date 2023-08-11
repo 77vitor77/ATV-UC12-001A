@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,18 +16,18 @@ namespace Atividade12PRJ
         public string Nome { get; set;}
         public int Cpf { get; set; }
         public DateTime DataDeNascimento { get; set; }
-        public int RendaMensal { get; set; }
+        public double RendaMensal { get; set; }
 
         
         
-        public Correntistas()
+        public Correntistas(int v, string text)
         {
             int idade;
             IDcorrentista = IDcorrentista ++;
             idade = Convert.ToInt32(DateTime.Now - DataDeNascimento);
         }
                 
-        public Correntistas(int idcorrentista, string nome, int cpf, DateTime datadenascimento, int rendamensal)
+        public Correntistas(int idcorrentista, string nome, int cpf, DateTime datadenascimento, double rendamensal)
         {
 
             this.IDcorrentista = idcorrentista;
@@ -38,19 +39,28 @@ namespace Atividade12PRJ
         }
 
 
-        public int VerificaçãoDeIdade(int idade)
+         public bool Ehmaior()
         {
+            DateTime dataatual = DateTime.Now;
 
-            if (idade < 18)
-            {
-                throw new Exception("Idade menor que 18 anos");
-            }
-            else
-            {
-                return idade;
-            }
-            
+
+            int idade = dataatual.Year - this.DataDeNascimento.Year;
+
+            if (idade > 0)
+
+
+
+            return
         }
+
+
+
+
+
+
+
+
+
 
 
     }

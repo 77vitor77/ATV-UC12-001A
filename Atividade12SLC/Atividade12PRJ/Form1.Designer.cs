@@ -34,12 +34,12 @@
             lblRendamensal = new Label();
             txtnome = new TextBox();
             txtcpf = new TextBox();
-            txtdatadenascimento = new TextBox();
             button1 = new Button();
             txtrendamensal = new TextBox();
             lblID = new Label();
             lblidmostrar = new Label();
-            dateTimePicker1 = new DateTimePicker();
+            datadenascimento = new DateTimePicker();
+            txtID = new TextBox();
             SuspendLayout();
             // 
             // lblnome
@@ -98,14 +98,6 @@
             txtcpf.Size = new Size(250, 43);
             txtcpf.TabIndex = 7;
             // 
-            // txtdatadenascimento
-            // 
-            txtdatadenascimento.Font = new Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
-            txtdatadenascimento.Location = new Point(12, 194);
-            txtdatadenascimento.Name = "txtdatadenascimento";
-            txtdatadenascimento.Size = new Size(250, 43);
-            txtdatadenascimento.TabIndex = 8;
-            // 
             // button1
             // 
             button1.Font = new Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
@@ -129,7 +121,7 @@
             // 
             lblID.AutoSize = true;
             lblID.Font = new Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
-            lblID.Location = new Point(12, 18);
+            lblID.Location = new Point(12, 22);
             lblID.Name = "lblID";
             lblID.Size = new Size(180, 37);
             lblID.TabIndex = 0;
@@ -139,28 +131,37 @@
             // 
             lblidmostrar.AutoSize = true;
             lblidmostrar.Font = new Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
-            lblidmostrar.Location = new Point(187, 18);
+            lblidmostrar.Location = new Point(187, 22);
             lblidmostrar.Name = "lblidmostrar";
             lblidmostrar.Size = new Size(0, 37);
             lblidmostrar.TabIndex = 11;
             // 
-            // dateTimePicker1
+            // datadenascimento
             // 
-            dateTimePicker1.Location = new Point(282, 330);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(248, 23);
-            dateTimePicker1.TabIndex = 12;
+            datadenascimento.Location = new Point(12, 194);
+            datadenascimento.Name = "datadenascimento";
+            datadenascimento.Size = new Size(250, 23);
+            datadenascimento.TabIndex = 12;
+            datadenascimento.ValueChanged += dateTimePicker1_ValueChanged;
+            // 
+            // txtID
+            // 
+            txtID.Font = new Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
+            txtID.Location = new Point(239, 22);
+            txtID.Name = "txtID";
+            txtID.Size = new Size(250, 43);
+            txtID.TabIndex = 13;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(654, 425);
-            Controls.Add(dateTimePicker1);
+            Controls.Add(txtID);
+            Controls.Add(datadenascimento);
             Controls.Add(lblidmostrar);
             Controls.Add(txtrendamensal);
             Controls.Add(button1);
-            Controls.Add(txtdatadenascimento);
             Controls.Add(txtcpf);
             Controls.Add(txtnome);
             Controls.Add(lblRendamensal);
@@ -187,6 +188,7 @@
         private TextBox txtrendamensal;
         private Label lblID;
         private Label lblidmostrar;
-        private DateTimePicker dateTimePicker1;
+        private DateTimePicker datadenascimento;
+        private TextBox txtID;
     }
 }
