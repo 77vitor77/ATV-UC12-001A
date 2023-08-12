@@ -40,13 +40,14 @@
             lblidmostrar = new Label();
             datadenascimento = new DateTimePicker();
             txtID = new TextBox();
+            button2 = new Button();
             SuspendLayout();
             // 
             // lblnome
             // 
             lblnome.AutoSize = true;
             lblnome.Font = new Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
-            lblnome.Location = new Point(12, 68);
+            lblnome.Location = new Point(12, 95);
             lblnome.Name = "lblnome";
             lblnome.Size = new Size(210, 37);
             lblnome.TabIndex = 1;
@@ -56,7 +57,7 @@
             // 
             lblcpf.AutoSize = true;
             lblcpf.Font = new Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
-            lblcpf.Location = new Point(268, 68);
+            lblcpf.Location = new Point(268, 95);
             lblcpf.Name = "lblcpf";
             lblcpf.Size = new Size(62, 37);
             lblcpf.TabIndex = 2;
@@ -66,7 +67,7 @@
             // 
             lbldatadenascimento.AutoSize = true;
             lbldatadenascimento.Font = new Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
-            lbldatadenascimento.Location = new Point(12, 154);
+            lbldatadenascimento.Location = new Point(268, 193);
             lbldatadenascimento.Name = "lbldatadenascimento";
             lbldatadenascimento.Size = new Size(258, 37);
             lbldatadenascimento.TabIndex = 3;
@@ -76,7 +77,7 @@
             // 
             lblRendamensal.AutoSize = true;
             lblRendamensal.Font = new Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
-            lblRendamensal.Location = new Point(268, 154);
+            lblRendamensal.Location = new Point(12, 193);
             lblRendamensal.Name = "lblRendamensal";
             lblRendamensal.Size = new Size(243, 37);
             lblRendamensal.TabIndex = 4;
@@ -85,7 +86,7 @@
             // txtnome
             // 
             txtnome.Font = new Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
-            txtnome.Location = new Point(12, 108);
+            txtnome.Location = new Point(12, 135);
             txtnome.Name = "txtnome";
             txtnome.Size = new Size(250, 43);
             txtnome.TabIndex = 6;
@@ -93,7 +94,7 @@
             // txtcpf
             // 
             txtcpf.Font = new Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
-            txtcpf.Location = new Point(268, 108);
+            txtcpf.Location = new Point(268, 135);
             txtcpf.Name = "txtcpf";
             txtcpf.Size = new Size(250, 43);
             txtcpf.TabIndex = 7;
@@ -101,7 +102,7 @@
             // button1
             // 
             button1.Font = new Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
-            button1.Location = new Point(12, 285);
+            button1.Location = new Point(12, 297);
             button1.Name = "button1";
             button1.Size = new Size(250, 68);
             button1.TabIndex = 9;
@@ -112,7 +113,7 @@
             // txtrendamensal
             // 
             txtrendamensal.Font = new Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
-            txtrendamensal.Location = new Point(268, 194);
+            txtrendamensal.Location = new Point(12, 233);
             txtrendamensal.Name = "txtrendamensal";
             txtrendamensal.Size = new Size(250, 43);
             txtrendamensal.TabIndex = 10;
@@ -121,7 +122,7 @@
             // 
             lblID.AutoSize = true;
             lblID.Font = new Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
-            lblID.Location = new Point(12, 22);
+            lblID.Location = new Point(12, 9);
             lblID.Name = "lblID";
             lblID.Size = new Size(180, 37);
             lblID.TabIndex = 0;
@@ -138,25 +139,37 @@
             // 
             // datadenascimento
             // 
-            datadenascimento.Location = new Point(12, 194);
+            datadenascimento.Location = new Point(268, 233);
             datadenascimento.Name = "datadenascimento";
-            datadenascimento.Size = new Size(250, 23);
+            datadenascimento.Size = new Size(258, 23);
             datadenascimento.TabIndex = 12;
             datadenascimento.ValueChanged += dateTimePicker1_ValueChanged;
             // 
             // txtID
             // 
             txtID.Font = new Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
-            txtID.Location = new Point(239, 22);
+            txtID.Location = new Point(12, 49);
             txtID.Name = "txtID";
             txtID.Size = new Size(250, 43);
             txtID.TabIndex = 13;
+            // 
+            // button2
+            // 
+            button2.Font = new Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
+            button2.Location = new Point(12, 440);
+            button2.Name = "button2";
+            button2.Size = new Size(250, 68);
+            button2.TabIndex = 14;
+            button2.Text = "cadastrar";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(654, 425);
+            ClientSize = new Size(592, 520);
+            Controls.Add(button2);
             Controls.Add(txtID);
             Controls.Add(datadenascimento);
             Controls.Add(lblidmostrar);
@@ -190,5 +203,6 @@
         private Label lblidmostrar;
         private DateTimePicker datadenascimento;
         private TextBox txtID;
+        private Button button2;
     }
 }
