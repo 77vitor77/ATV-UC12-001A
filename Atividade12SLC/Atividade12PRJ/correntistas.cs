@@ -12,27 +12,63 @@ namespace Atividade12PRJ
 {
     public class Correntistas
     {
-        private double renda;
+        private double _RendaMensal;
+        private string _Nome;
+        private DateTime _Datadenascimento;
 
-        public int? IDcorrentista 
-        { 
-            get 
+
+
+        public int? IDcorrentista { get; set;  }
+        public string Nome 
+        {
+            get
             {
 
-                return IDcorrentista;
+                return _Nome; 
             
-            } 
-            set 
+            }
+            set
             {
-            
-            
-            } 
+                if  (value == string.Empty ) 
+                {
+
+                    MessageBox.Show("caixa de nome não pode ficar vazio");
+                
+                }
+
+
+            }    
+                
         }
-        public string Nome { get; set;}
         public string Cpf { get; set; }
-        public DateTime DataDeNascimento { get; set; }
-        public double RendaMensal { get; set; }
+        public DateTime DataDeNascimento
+        {
+            get
+            {
 
+                return _Datadenascimento;
+
+            }
+            set
+            {
+                if (value > DateTime.Now)
+                {
+
+                    MessageBox.Show("Data de nascimento não pode ser maio que a data de hoje ");
+
+                }
+                else
+                {
+
+                    this._Datadenascimento = value;
+
+                }
+
+            }
+
+        }
+        public double RendaMensal { get; set; }
+        public int Totaldeclientes { get; set; }
 
 
         public Correntistas(int v, string text)
@@ -41,18 +77,18 @@ namespace Atividade12PRJ
             IDcorrentista = IDcorrentista ++;
             idade = Convert.ToInt32(DateTime.Now - DataDeNascimento);
         }
-         
-        
 
-        public Correntistas(int idcorrentista, string nome, string cpf, DateTime datadenascimento, double rendamensal )
+
+
+        public Correntistas(string nome, string cpf, DateTime datadenascimento, double rendamensal)
         {
-
-            this.IDcorrentista = idcorrentista;
+            this.Totaldeclientes = Totaldeclientes + 1;
+            this.IDcorrentista = Totaldeclientes ;
             this.Nome = nome;
             this.Cpf = cpf;
             this.DataDeNascimento = datadenascimento;
             this.RendaMensal = rendamensal;
-
+            
         }
 
 
@@ -90,7 +126,6 @@ namespace Atividade12PRJ
 
          public string mostrarRank() 
          {
- 
                 if (RendaMensal <= 3000)
                 {
 
@@ -122,12 +157,18 @@ namespace Atividade12PRJ
          {
 
 
-            return $"olá {Nome}\nbem vindo ao banco\nNivel de cliente: {mostrarRank()}";
+            return $"olá {Nome}\nbem vindo ao banco\nNivel de cliente: {mostrarRank()}\nID de usuario ={IDcorrentista}";
 
 
 
          }
 
+         public string doiscorrentistas()
+         {          
+
+
+
+         }
 
 
 
